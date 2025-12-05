@@ -1,10 +1,6 @@
 #include <Arduino.h>
 #include "letters.h"
 
-int power = 22;
-
-int delayTime = 1000;
-
 void setup() {
   // put your setup code here, to run once:
   pinMode(LED_BUILTIN, OUTPUT);
@@ -19,7 +15,6 @@ void setup() {
   pinMode(common, OUTPUT);
   pinMode(power, OUTPUT);
 
-
 }
 
 void loop() {
@@ -33,9 +28,10 @@ void loop() {
 
   // Power Light
 
-  digitalWrite(power, HIGH);
   digitalWrite(common, HIGH);
+  digitalWrite(power, HIGH); // Switch on Power Light
 
+  // Show JESUS
   showJ();
   delay(delayTime);
   showE();

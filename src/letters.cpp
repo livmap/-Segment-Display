@@ -1,7 +1,6 @@
 #include <Arduino.h>
 #include "letters.h"
 
-
 void showJ(){
   digitalWrite(A, LOW);
   digitalWrite(B, HIGH);

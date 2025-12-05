@@ -17,5 +17,7 @@ const int A = 11; // 7
 const int F = 28; // 9
 const int G = 30; // 10
 
+const int power = 22; // Power Light
+const int delayTime = 1000;
 
 #endif
